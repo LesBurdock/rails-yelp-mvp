@@ -1,0 +1,63 @@
+
+.form{
+  width:60%;
+  position:relative;
+}
+
+
+label{
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  color:rgba(128, 128, 128, 1);
+  width: 200px;
+  justify:center;
+}
+
+input{
+  background-color:rgba(255, 228,229,0.2);
+  border: 1px solid rgba(128, 123,121,0.5);
+  justify: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 75%;
+  clear: both; /* Required for Webkit, but not for Gecko */
+}
+
+input[type = submit]{
+  background-color:rgba(255, 228,229,1);
+  width:75%;
+  border-radius: 5px;
+  margin-top: 10px;
+  clear: both; /* Required for Webkit, but not for Gecko */
+}
+
+#restaurant_category{
+  border-radius: 5px;
+  background-color:rgba(255, 228,229,0.2);
+  border: 1px solid rgba(128, 123,121,0.5);
+  width:75%;
+}
+
+#restaurant_address{
+  border-radius: 5px;
+  background-color:rgba(255, 228,229,0.2);
+  border: 1px solid rgba(128, 123,121,0.5);
+  width:75%;
+}
+
+#new_restaurant{
+  display: grid;
+  grid-gap: 15px;
+  box-shadow: 15px -2px 18px 0px rgba(219,219,219,1);
+  position:relative;
+  background-color: rgba(248,232,215,0.2);
+  border-radius: 5px;
+  top:30%;
+  left:25%;
+  margin:20px;
+  padding:20px;
+  width: 60%;
+
+}
+

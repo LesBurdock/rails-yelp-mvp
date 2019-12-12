@@ -1,0 +1,19 @@
+
+<div class = 'form m-5'>
+  <h3>Add Review for <%= @restaurant.name %> </h3>
+
+  <%= simple_form_for([@restaurant, @review]) do |f| %>
+    <% if @review.errors.any? %>
+    <div is = "errors">
+      <ul>
+        <% @review.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+    <% end %>
+    <%= f.input :content %>
+    <%= f.input :rating %>
+    <%= f.submit 'Post Review', class:'btn btn-default'%>
+  </div>
+<% end %>

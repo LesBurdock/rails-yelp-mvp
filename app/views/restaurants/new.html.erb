@@ -1,0 +1,20 @@
+  <div class = 'form'>
+  <%= simple_form_for(@restaurant) do |f| %>
+  <% if @restaurant.errors.any? %>
+    <div is = "errors">
+      <ul>
+        <% @restaurant.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+     <% end %>
+    <%= f.input :name %>
+    <%= f.input :phone_number %>
+    <%= f.input :address %>
+    <%= f.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"] %>
+    <%= f.input :rating %>
+    <%= f.submit "add this restaurant", class: "btn btn-default" %>
+  <% end %>
+</div>
+

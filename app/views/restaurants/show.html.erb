@@ -1,0 +1,24 @@
+
+
+<div class="card-trip">
+  <img src='https://picsum.photos/200/300/?blur.jpg' />
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= @restaurant.name %></h2>
+      <p><%= @restaurant.address %></p>
+      <p><%= @restaurant.phone_number %></p>
+      <p><%= @restaurant.rating %></p>
+    </div>
+  </div>
+</div>
+  <%= link_to 'Post a review', new_restaurant_review_path(@restaurant) %>
+  <%= link_to 'Back to All Restaurants', restaurants_path %>
+</div>
+
+<ul>
+  <% @restaurant.reviews.each do |r| %>
+    <li>
+    <%= r.content %>
+  </li>
+  <%end%>
+</ul>

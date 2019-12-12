@@ -1,0 +1,16 @@
+
+<div id = 'cards'>
+   <% @restaurants.each do |restaurant| %>
+  <div class="card-trip">
+  <img src='https://picsum.photos/200/300/?blur.jpg' />
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= link_to restaurant.name, restaurant_path(restaurant)%></h2>
+      <p><%= restaurant.address %></p>
+    </div>
+    <h2 class="card-trip-pricing"><%= restaurant.rating %></h2>
+    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+  </div>
+</div>
+  <% end %>
+</div>
